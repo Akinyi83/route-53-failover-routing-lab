@@ -1,0 +1,36 @@
+{
+  "Comment": "Failover routing for Café application",
+  "Changes": [
+    {
+      "Action": "UPSERT",
+      "ResourceRecordSet": {
+        "Name": "www.<Your_Domain>.com.",
+        "Type": "A",
+        "SetIdentifier": "Primary",
+        "Failover": "PRIMARY",
+        "TTL": 30,
+        "ResourceRecords": [
+          {
+            "Value": 50.112.247.40 #  CafeInstance1_IP 
+          }
+        ],
+        "HealthCheckId": "<Health_Check_ID>"
+      }
+    },
+    {
+      "Action": "UPSERT",
+      "ResourceRecordSet": {
+        "Name": "www.<Your_Domain>.com.",
+        "Type": "A",
+        "SetIdentifier": "Secondary",
+        "Failover": "SECONDARY",
+        "TTL": 30,
+        "ResourceRecords": [
+          {
+            "Value": 34.214.240.61 # CafeInstance2_IP
+          }
+        ]
+      }
+    }
+  ]
+}
