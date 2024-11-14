@@ -1,5 +1,5 @@
 # Amazon Route 53 Failover Routing Lab Documentation
-
+Set up of the two ec2 instances in different avaialabilty zone is within the configurations files (launch-ec2-instances.sh) which host the cafe websites to which Route 53 failover will be set. The screenshot-section also contains a document that showcases the steps and results of each step when setting up rout53 incase one uses AWS console for this lab.
 
 ## Objective:
 This lab demonstrates how to configure failover routing using Amazon Route 53 for a web application running on Amazon EC2 instances in different Availability Zones. The configuration ensures that if the primary web server fails, traffic is redirected to the secondary instance automatically.
