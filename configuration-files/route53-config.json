@@ -11,7 +11,7 @@
         "TTL": 30,
         "ResourceRecords": [
           {
-            "Value": 50.112.247.40 #  CafeInstance1_IP 
+            "Value": 50.112.247.40 
           }
         ],
         "HealthCheckId": "<Health_Check_ID>"
@@ -27,7 +27,7 @@
         "TTL": 30,
         "ResourceRecords": [
           {
-            "Value": 34.214.240.61 # CafeInstance2_IP
+            "Value": 34.214.240.61 
           }
         ]
       }
